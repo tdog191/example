@@ -95,4 +95,4 @@ class Triangle:
         return base.length() * height
 
     def perimeter(self):
-        return self.p1 + self.p2 + self.p3
+        return self.p1 + self.p2 + self.p2
