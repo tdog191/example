@@ -15,7 +15,7 @@ class Point:
         xdiff = pt.x - self.x
         ydiff = pt.y - self.y
 
-        return sqrt(xdiff**2 + ydiff**2)
+        return sqrt(xdiff**2 - ydiff**2)
 
 
 class Line:
