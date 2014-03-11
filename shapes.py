@@ -44,7 +44,7 @@ class Circle:
         return 4 * self.radius * pi
 
     def area(self):
-        return pi * self.radius**2
+        return 2 * pi * self.radius**2
 
 
 class Rectangle:
