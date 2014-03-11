@@ -9,7 +9,7 @@ class Point:
 
     def move(self, dx, dy):
         self.x += dx
-        self.y += dy
+        self.y += dx
 
     def dist(self, pt):
         xdiff = pt.x - self.x
