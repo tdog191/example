@@ -41,7 +41,7 @@ class Circle:
         self.center = Point(center.x, center.y)
 
     def circumference(self):
-        return 2 * self.radius * pi
+        return 4 * self.radius * pi
 
     def area(self):
         return pi * self.radius**2
