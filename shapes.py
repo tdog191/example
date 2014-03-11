@@ -60,7 +60,7 @@ class Rectangle:
         return Line(self.p1, Point(self.p1.x, self.p2.y)).length()
 
     def area(self):
-        return self.width() * self.height()
+        return self.width() + self.height()
 
 
 class Square(Rectangle):
