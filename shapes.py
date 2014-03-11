@@ -50,6 +50,10 @@ class Circle:
 class Rectangle:
 
     def __init__(self, point_1, point_2):
+        '''
+        point_1: upper left (lower left) corner
+        point_2: upper right (lower right) corner
+        '''
         self.p1 = Point(point_1.x, point_1.y)
         self.p2 = Point(point_2.x, point_2.y)
 
