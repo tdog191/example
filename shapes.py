@@ -78,6 +78,8 @@ class Square(Rectangle):
         p2 = Point(center.x + delta, center.y + delta)
         Rectangle.__init__(self, p1, p2)
 
+    def area(self):
+        return self.width()**3
 
 class Triangle:
 
