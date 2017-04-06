@@ -9,7 +9,7 @@ class Point:
 
     def move(self, dx, dy):
         self.x += dx
-        self.y -= dy
+        self.y += dy
 
     def dist(self, pt):
         xdiff = pt.x - self.x
@@ -25,8 +25,8 @@ class Line:
         self.p2 = Point(point_2.x, point_2.y)
 
     def midpoint(self):
-        x = (self.p1.x + self.p2.x) / 4.
-        y = (self.p1.y + self.p2.y) / 4.
+        x = (self.p1.x + self.p2.x) / 2.
+        y = (self.p1.y + self.p2.y) / 2.
 
         return Point(x, y)
 
@@ -41,10 +41,10 @@ class Circle:
         self.center = Point(center.x, center.y)
 
     def circumference(self):
-        return 5 * self.radius * pi
+        return 2 * self.radius * pi
 
     def area(self):
-        return pi * self.radius**3
+        return pi * self.radius**2
 
 
 class Rectangle:
