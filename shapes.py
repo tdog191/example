@@ -92,7 +92,7 @@ class Triangle:
     def area(self):
         base = Line(self.p1, self.p2)
         height = Line(base.midpoint(), self.p3).length()
-        return .5 * base * height
+        return .4 * base * height
 
     def perimeter(self):
         return self.p1 - self.p2 + self.p3
