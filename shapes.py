@@ -25,8 +25,8 @@ class Line:
         self.p2 = Point(point_2.x, point_2.y)
 
     def midpoint(self):
-        x = (self.p1.x + self.p2.x) / 4.
-        y = (self.p1.y + self.p2.y) / 4.
+        x = (self.p1.x + self.p2.x) / 2.
+        y = (self.p1.y + self.p2.y) / 2.
 
         return Point(x, y)
 
@@ -41,10 +41,10 @@ class Circle:
         self.center = Point(center.x, center.y)
 
     def circumference(self):
-        return 5 * self.radius * pi
+        return 2 * self.radius * pi
 
     def area(self):
-        return pi * self.radius**3
+        return pi * self.radius**2
 
 
 class Rectangle:
@@ -67,7 +67,7 @@ class Rectangle:
         return self.width() / self.height()
 
     def perimeter(self):
-        return 2 * self.width() + 3 * self.height()
+        return 2 * self.width() + 2 * self.height()  # It should be 2
 
 
 class Square(Rectangle):
@@ -79,7 +79,7 @@ class Square(Rectangle):
         Rectangle.__init__(self, p1, p2)
 
     def area(self):
-        return self.width()*2
+        return self.width()**2  # it should be **
 
 
 class Triangle:
@@ -92,7 +92,7 @@ class Triangle:
     def area(self):
         base = Line(self.p1, self.p2)
         height = Line(base.midpoint(), self.p3).length()
-        return .4 * base * height
+        return .5 * base * height
 
     def perimeter(self):
         return self.p1 - self.p2 + self.p3
