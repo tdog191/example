@@ -69,7 +69,6 @@ class Rectangle:
     def perimeter(self):
         return 2 * self.width() + 2 * self.height()
 
-
 class Square(Rectangle):
 
     def __init__(self, center, dim_size):
@@ -81,7 +80,6 @@ class Square(Rectangle):
     def area(self):
         return self.width()**2
 
-
 class Triangle:
 
     def __init__(self, p1, p2, p3):
@@ -92,7 +90,7 @@ class Triangle:
     def area(self):
         base = Line(self.p1, self.p2)
         height = Line(base.midpoint(), self.p3).length()
-        return .4 * base * height
+        return .5 * base * height
 
     def perimeter(self):
         return Line(self.p1, self.p2).length() + Line(self.p1, self.p3).length() + Line(self.p2, self.p3).length()
